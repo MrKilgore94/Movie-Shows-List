@@ -1,10 +1,11 @@
 import "./App.css";
 
 import { useState } from "react";
+
 const TitleList = (props) => {
   const [titles, setTitles] = useState(props.initialTitles || []);
   const [title, setTitle] = useState("");
-  const [isEditing, setIsEditing] = useState(false);
+  // const [isEditing, setIsEditing] = useState(false);
 
   const renderTitles = () => {
     return titles.map((x) => {
