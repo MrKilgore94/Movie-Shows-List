@@ -5,9 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(95, 95, 95);
+  cursor: crosshair;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#deleteButton {
+  border-radius: 20px;
+  background-color: rgb(252, 61, 61);
+  color: rgb(0, 0, 0);
+}
+
+#addButton {
+  border-radius: 50px;
+  background-color: rgb(55, 148, 60);
+  color: rgb(255, 255, 255);
+}
+
+#textField {
+  border-radius: 50px;
+
 }
