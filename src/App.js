@@ -14,7 +14,7 @@ function App() {
         {id: 2, title: 'Uncharted', read: false},
         {id: 3, title: '300', read: true},
         {id: 4, title: 'American Sniper', read: true},
-        {id: 5, title: 'movie', read: true},
+        
 
 
     
