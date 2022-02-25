@@ -17,7 +17,7 @@ const TitleList = (props) => {
           margin: '10px',
             backgroundColor: "white",
             cursor: "crosshair",
-            textDecoration: x.read ? "line-through" : "",
+            textDecoration: x.watched ? "line-through" : "",
            
           }}
         >
@@ -32,7 +32,7 @@ const TitleList = (props) => {
   const toggleTitle = (idOfTitleClicked) => {
     const updatesTitles = titles.map((title) => {
       if (title.id === idOfTitleClicked) {
-        return { ...title, read: !title.read };
+        return { ...title, watched: !title.watched };
       }
       return title;
     });
@@ -49,7 +49,7 @@ const TitleList = (props) => {
     event.preventDefault();
     const newTitles = [
       ...titles,
-      { id: Math.random(), title: title, read: false },
+      { id: Math.random(), title: title, watched: false },
     ];
     setTitles(newTitles);
     setTitle("");
